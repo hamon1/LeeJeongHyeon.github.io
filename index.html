@@ -9,40 +9,40 @@
     <script>
 
         $(document).ready(function () {
-            $('.p2').hide('fast');
-            $('.p3').hide('fast');
+            $('.p2').hide();
+            $('.p3').hide();
 
-            $('.drawshow').hide('fast');
+            $('.drawshow').hide();
 
             $('#1').click(function () {
-                $('.p1').show('fast');
-                $('.p2').hide('fast');
-                $('.p3').hide('fast');
+                $('.p1').show();
+                $('.p2').hide();
+                $('.p3').hide();
             });
             $('#2').click(function () {
-                $('.p2').show('fast');
-                $('.p1').hide('fast');
-                $('.p3').hide('fast');
+                $('.p2').show();
+                $('.p1').hide();
+                $('.p3').hide();
             });
             $('#3').click(function () {
-                $('.p3').show('fast');
-                $('.p2').hide('fast');
-                $('.p1').hide('fast');
+                $('.p3').show();
+                $('.p2').hide();
+                $('.p1').hide();
             });
             $('#draw1').hover(function () {
-                $('#draws1').show('fast');
+                $('#draws1').show();
             }).on('mouseleave', function () {
-                $('#draws1').hide('fast');
+                $('#draws1').hide();
             });
             $('#draw2').hover(function () {
-                $('#draws2').show('fast');
+                $('#draws2').show();
             }).on('mouseleave', function () {
-                $('#draws2').hide('fast');
+                $('#draws2').hide();
             });
             $('#draw3').hover(function () {
-                $('#draws3').show('fast');
+                $('#draws3').show();
             }).on('mouseleave', function () {
-                $('#draws3').hide('fast');
+                $('#draws3').hide();
             });
 
         });
@@ -91,7 +91,6 @@
 
         li:hover {
             color: gray;
-            font-size: 110%;
         }
 
         a {
