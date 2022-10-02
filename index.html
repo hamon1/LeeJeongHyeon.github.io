@@ -14,6 +14,8 @@
 
             $('.drawshow').hide();
 
+            $('#profile').hide();
+
             $('#1').click(function () {
                 $('.p1').show();
                 $('.p2').hide();
@@ -29,6 +31,7 @@
                 $('.p2').hide();
                 $('.p1').hide();
             });
+
             $('#draw1').hover(function () {
                 $('#draws1').show();
             }).on('mouseleave', function () {
@@ -43,6 +46,14 @@
                 $('#draws3').show();
             }).on('mouseleave', function () {
                 $('#draws3').hide();
+            });
+
+            $('#icon').click(function () {
+                $('#profile').show();
+                $('#l1').hide();
+            }).on(function () {
+                $('#profile').hide();
+                $('#l1').show();
             });
 
         });
@@ -223,7 +234,17 @@
             width: 30px;
             margin-right: 0.5em;
 
-            
+
+        }
+
+        #profile {
+            float: right;
+            width: 500px;
+            height: 100%;
+            background-color: aquamarine;
+            margin: 0;
+            padding: 0;
+            z-index: 100;
         }
 
         @media screen and (max-width: 767px) {
@@ -316,6 +337,15 @@
     </div>
     <!--end-->
     <div class="text">
+        <div id = "profile">
+            <img>
+            이정현
+            강원대학교 컴퓨터 공학과 2학년 재학 중
+            <hr>
+            sdlkfjsl
+            <hr>
+
+        </div>
         <div class="l1">
             <ul class="a">
                 <li id="1">Main</li>
