@@ -275,6 +275,45 @@
             width: 200px;
             border-radius: 100px;
         }
+        .project_list {
+            width: 20px;
+            height: 100px;
+            padding: 0;
+
+            list-style-type:none;
+            position: fixed;
+            float: right;
+
+            left: 650px;
+            top: 250px;
+
+            background-color: gray;
+
+            border-radius: 30px;
+            overflow: hidden;
+        }
+        .project_list>li {
+            width: 25px;
+            position: relative;
+
+            top : 14px;
+            left: 18px;
+            margin-bottom: 5px;
+
+            background-color: gray;
+        }
+
+        .project_list>li:hover {
+            width: 25px;
+            position: relative;
+
+            top : 15px;
+            left: 20px;
+            margin-bottom: 5px;
+
+            background-color: gray;
+            color: aqua;
+        }
 
         @media screen and (max-width: 767px) {
             .box1 {
@@ -414,9 +453,9 @@
             <ul class="a">
                 <li id="1">Main</li>
 
-                <li id="2">Hobbies</li>
+                <li id="2">project</li>
 
-                <li id="3">Music</li>
+                <li id="3">cs</li>
             </ul>
         </div>
         <!--end list bar-->
@@ -430,33 +469,31 @@
             </div>
         </div>
         <div class="p2" id="page">
+            <ul class = "project_list">
+                <li id="aquarium">
+                    ⚉
+                </li>
+                <li id="backjoon">
+                    ⚉
+                </li>
+                <li id="Lcs">
+                    ⚉
+                </li>
+            </ul>
             <div>
-                <h2>Hobbies</h2>
+                <h2>project</h2>
             </div>
             <div>
-                <div><b>drawing &#127912</b></div>
-                <br>
-                <img class="draw" id="draw1" src="./drawing1.jpg">
-                <img class="draw" id="draw2" src="./drawing2.jpg">
-                <img class="draw" id="draw3" src="./drawing3.jpg">
+                aquarium
+            
             </div>
+            <div>
+                backjoon
 
-            <div>
-                <img class="drawshow" id="draws1" src="./drawing1.jpg">
-                <img class="drawshow" id="draws2" src="./drawing2.jpg">
-                <img class="drawshow" id="draws3" src="./drawing3.jpg">
             </div>
-            <hr>
             <div>
-                <div><b>sports &#127943</b></div>
-                <br>
-                <img class="sports" src="./sprots.jpg">
-            </div>
-            <hr>
-            <div>
-                <div><b>pet &#128038</b></div>
-                <br>
-                <img class="pet" src="./pet.jpg">
+                Let me borrow your CS
+
             </div>
         </div>
         <div class="p3" id="page">
