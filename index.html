@@ -51,8 +51,12 @@
             $('#icon').click(function () {
                 $('#profile').slideToggle();
                 $('.l1').slideToggle();
+                $('.project_list').slideToggle();
             });
 
+            $('#aquarium').click(function() {
+                
+            })
         });
     </script>
     <style>
@@ -281,11 +285,10 @@
             padding: 0;
 
             list-style-type:none;
-            position: fixed;
+            position: relative;
             float: right;
 
-            left: 650px;
-            top: 250px;
+            top: 200px;
 
             background-color: gray;
 
@@ -312,7 +315,7 @@
             margin-bottom: 5px;
 
             background-color: gray;
-            color: aqua;
+            color:rgb(220, 220, 220);
         }
 
         @media screen and (max-width: 767px) {
@@ -429,11 +432,10 @@
             padding: 0;
 
             list-style-type:none;
-            position: fixed;
+            position: relative;
             float: right;
 
-            left: 500px;
-            top: 250px;
+            top: 100px;
 
             background-color: gray;
 
@@ -509,30 +511,31 @@
         </div>
         <div class="p2" id="page">
             <ul class = "project_list">
-                <li id="aquarium">
+                <li id="aquariumicon" href ="#aquarium">
                     ⚉
                 </li>
-                <li id="backjoon">
+                <li id="backjoonicon" href="#backjoon">
                     ⚉
                 </li>
-                <li id="Lcs">
+                <li id="Lcsicon" href="#Lcs">
                     ⚉
                 </li>
             </ul>
             <div>
                 <h2>project</h2>
             </div>
-            <div>
+            <div id="aquarium">
                 aquarium
-            
+                <br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
-            <div>
+            <div id="backjoon">
                 backjoon
-
+                <br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
-            <div>
+            <div id="Lcs">
                 Let me borrow your CS
-
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
         </div>
         <div class="p3" id="page">
